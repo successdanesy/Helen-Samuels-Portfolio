@@ -5,98 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
-                <a href="#">Your Name</a>
+                <a href="#">Helen Samuel</a>
             </div>
             <ul class="menu">
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-button" onclick="showSidebar()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
-                </svg>
-            </div>
         </div>
-        <ul class="sidebar" id="sidebar">
-            <li class="close-button" onclick="hideSidebar()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-                    <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
-                </svg>
-            </li>
-            <li><a href="#projects" onclick="hideSidebar()">Projects</a></li>
-            <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
-        </ul>
     </nav>
 
     <!-- Header Section -->
-    <header>
-        <div class="about-text">
-            <h1>Helen Samuel</h1>
-            <p>Virtual & Personal Assitant</p>
-            <button onclick="scrollToSection('projects')">View Projects</button>
-            <button onclick="scrollToSection('contact')">Get in Touch</button>
-        </div>
-        <div class="about-image">
-            <img src="img/page1.JPG" alt="Your Photo" />
+    <header class="header">
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Helen Samuel</h1>
+                <p>Virtual <br> Assistant</p>
+                <div class="button-group">
+                    <button>View Projects</button>
+                    <button>Get in Touch</button>
+                </div>
+            </div>
+            
+            <div class="header-image">
+                <img src="img/page1.JPG" alt="Your Photo">
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="about-image">
-            <img src="img/page2.JPG" alt="About Photo" />
-        </div>
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>[Detailed about me section, similar to the PDF content.]</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="projects-gallery">
-            <div class="project-item">
-                <img src="img/project1.jpg" alt="Project 1" class="project-image" />
-                <h3>Project Title</h3>
-                <p>[Brief description of the project]</p>
+    <about class="about">
+        <about class="about-container">
+            <div class="about-image">
+                <img src="img/page2.JPG" alt="Your Photo">
             </div>
-            <div class="project-item">
-                <img src="img/project2.jpg" alt="Project 2" class="project-image" />
-                <h3>Project Title</h3>
-                <p>[Brief description of the project]</p>
-            </div>
-            <div class="project-item">
-                <img src="img/project3.jpg" alt="Project 3" class="project-image" />
-                <h3>Project Title</h3>
-                <p>[Brief description of the project]</p>
+            <div class="about-text">
+                <h1>Introduction</h1>
+                <p>About Me<br>Hi, I’m Helen Samuel, a Virtual Assistant dedicated to helping businesses run smoothly.
+                    I offer reliable support with tasks like managing emails, scheduling, research, customer service, 
+                    and social media management so you can focus on what matters most. I’m organized, efficient, and always 
+                    ready to tackle new challenges. My goal is to make your work easier and help your business grow. Let’s 
+                    work together to get things done!</p>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>I'd love to chat with you about your needs. Feel free to reach out via the options below.</p>
-        <div class="contact-buttons">
-            <a href="mailto:yourname@example.com" class="contact-button email">Email Me</a>
-            <a href="tel:+1234567890" class="contact-button phone">Call Me</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        </about>
 </body>
 </html>
