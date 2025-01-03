@@ -18,29 +18,44 @@ function showSidebar() {
     document.getElementById('sidebar').classList.remove('show');
   }
   
-  
-  // Open the Modal
-  function openModal(src) {
-    document.getElementById('myModal').style.display = "block";
-    document.getElementById('modalImage').src = src;
-  }
-  
-  // Close the Modal
-  function closeModal() {
-    document.getElementById('myModal').style.display = "none";
-  }
-  
-  // Close the modal if clicked outside the image
-  window.onclick = function(event) {
-    const modal = document.getElementById('myModal');
-    if (event.target === modal) {
-      closeModal();
-    }
-  }
-  
   // Add event listener to the close button
   document.querySelector(".close").addEventListener('click', closeModal);
   
   function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
   }
+
+//code to open and close certificate image
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    const modalImg = modal.querySelector('.modal-content');
+    modalImg.src = event.target.src; // Set the image source dynamically
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+//JavaScript for Animating Progress Circles
+
+document.addEventListener("DOMContentLoaded", () => {
+  const skillData = [
+      { id: 0, percentage: 73 },
+      { id: 1, percentage: 100 },
+  ];
+
+  document.querySelectorAll(".skill-chart").forEach((chart, index) => {
+      const circle = chart.querySelector(".progress");
+      const radius = circle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+      
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = circumference;
+
+      const percent = skillData[index].percentage;
+      const offset = circumference - (percent / 100) * circumference;
+      circle.style.strokeDashoffset = offset;
+  });
+});

@@ -6,6 +6,8 @@
     <title>Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 <body>
@@ -55,7 +57,165 @@
                     ready to tackle new challenges. My goal is to make your work easier and help your business grow. Let’s 
                     work together to get things done!</p>
             </div>
-        </div>
         </about>
+
+        <!-- Professional Projects Section -->
+<section class="projects" id="projects">
+    <div class="projects-container">
+        <h1>Professional Projects</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h2>2020</h2>
+                <h3>Customer Relationship Manager at Nellens Catering Services</h3>
+                <p>As a Customer Relationship Manager for Nellens Catering Services, I was responsible for maintaining strong 
+                    client relationships and ensuring high levels of satisfaction. I communicated with clients to understand their
+                     needs and tailored services to meet expectations. I resolved client concerns promptly and effectively, fostering 
+                     trust and loyalty. By proactively following up with clients, I helped increase repeat business and contributed to 
+                     service improvements through feedback collection. Additionally, I coordinated catering events, ensuring all logistics 
+                     and client preferences were met. This experience enhanced my skills in customer relations, problem- solving, and event
+                      management in the catering industry.</p>
+            </div>
+            <div class="timeline-item">
+                <h2>2023</h2>
+                <h3>Front Desk Personnel at G'mb Medical Laboratory</h3>
+                <p>As Front Desk Personnel at G’mb Medical Laboratory, I was responsible for greeting patients, managing appointments, and 
+                    handling inquiries. I ensured smooth patient flow by coordinating schedules, verifying insurance details, and directing 
+                    patients to the appropriate departments. Additionally, I maintained accurate patient records, processed payments, and 
+                    provided excellent customer service to ensure a positive experience. My role required strong communication, organizational 
+                    skills, and attention to detail to support both the lab staff and patients effectively.</p>
+            </div>
+            <div class="timeline-item">
+                <h2>2024</h2>
+                <h3>Virtual Assistant to Chime Victor</h3>
+                <p>As a Virtual Assistant to Chime Victor, CEO of Campusease.ng, I provided administrative support by managing schedules, 
+                    coordinating meetings, and handling communications. I assisted in organizing digital files, preparing reports, and conducting 
+                    research to support business operations. I also helped with social media management, responding to inquiries, and maintaining 
+                    client relations. My role required strong time management, attention to detail, and the ability to work independently while ensuring 
+                    smooth day-to-day operations for the CEO. This experience honed my skills in multitasking, communication, and remote collaboration.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Education Projects Section -->
+<section class="education" id="education">
+    <div class="education-container">
+        <div class="education-heading">
+            <h1>Educational Background</h1>
+        </div>
+        <div class="education-content">
+            <!-- Virtual Assistant Course -->
+            <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <img 
+                    src="img/certificate-1.JPG" 
+                    alt="Virtual Assistant Certificate" 
+                    class="certificate-image" 
+                    onclick="openModal('modal1')">
+                <div class="education-text">
+                    <h2>Virtual Assistant Course</h2>
+                    <p><strong>26/11/2024</strong></p>
+                    <p>I obtained a Virtual Assistant Certificate from ALX on November 26, 2024, further enhancing my skills and knowledge to provide efficient and professional support.</p>
+                </div>
+            </div>
+            <!-- Modal for Virtual Assistant Course -->
+            <div id="modal1" class="modal">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <img class="modal-content" id="modal-image-1">
+                <div class="modal-caption">Virtual Assistant Certificate</div>
+            </div>
+
+            <!-- Customer Service Course -->
+            <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <img 
+                    src="img/certificate-2.JPG" 
+                    alt="Customer Service Certificate" 
+                    class="certificate-image" 
+                    onclick="openModal('modal2')">
+                <div class="education-text">
+                    <h2>Customer's Service Course</h2>
+                    <p><strong>07/08/2024</strong></p>
+                    <p>I obtained a Customer Service Certificate, further enhancing my skills in communication, problem-solving, and delivering exceptional service to clients.</p>
+                </div>
+            </div>
+            <!-- Modal for Customer Service Course -->
+            <div id="modal2" class="modal">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <img class="modal-content" id="modal-image-2">
+                <div class="modal-caption">Customer Service Certificate</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Personal skills section-->
+<section class="personal-skills" id="personal-skills">
+    <div class="skills-container">
+        <h1>Personal Skills</h1>
+        <p>
+            As a personal assistant, I have achieved a strong blend of soft skills like communication, time management, problem-solving, organization, and adaptability, along with technical skills in tools like Microsoft Office, calendar management, project management software, data entry, cloud-based systems, and basic accounting software to ensure efficient and professional support.
+        </p>
+        <div class="skills-charts">
+            <!-- Soft Skills -->
+            <div class="skill-chart">
+                <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring__circle" stroke="#e0e0e0" stroke-width="8" fill="transparent" r="54" cx="60" cy="60" />
+                    <circle class="progress-ring__circle progress" stroke="#000000" stroke-width="8" fill="transparent" r="54" cx="60" cy="60" />
+                </svg>
+                <div class="percentage">73%</div>
+                <p>Soft Skills</p>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="skill-chart">
+                <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring__circle" stroke="#e0e0e0" stroke-width="8" fill="transparent" r="54" cx="60" cy="60" />
+                    <circle class="progress-ring__circle progress" stroke="#000000" stroke-width="8" fill="transparent" r="54" cx="60" cy="60" />
+                </svg>
+                <div class="percentage">100%</div>
+                <p>Technical Skills</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials sections -->
+<section class="testimonials-section">
+    <h1>Testimonials</h1>
+    
+    <div class="testimonial">
+        <img src="img/page4A.JPG" alt="The Talknowcrat">
+        <div class="testimonial-content">
+            <h3>The Talknowcrat</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Before working with Helen, my calendar was chaotic. Now, everything is organized, stress-free, and I’m always on track.</p>
+        </div>
+    </div>
+    
+    <div class="testimonial">
+        <img src="img/page4B.JPG" alt="Chime Victor C.E.O">
+        <div class="testimonial-content">
+            <h3>Chime Victor C.E.O <br> CampusEase.ng</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>I've been working with Helen as my virtual assistant, and she’s been a huge asset. Her ability to take accurate, well-organized meeting minutes allows me to focus on the conversation. Reliable and efficient, Helen is a professional I highly recommend for any administrative support.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
