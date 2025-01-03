@@ -134,41 +134,48 @@ a {
     object-fit: cover; /* Ensures the image fills the oval without distortion */
 }
 
+
+
 /* About */
 .about {
-    padding: 150px 150px;
+    padding: 100px 150px;
 }
 
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    margin: 0;
-    margin-bottom: 30px;
-    /* gap: 90px; Reduced the gap between text and image */
-    /* align-items: center; */
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 0; /* Reduced the gap between text and image */
+    align-items: center;
 }
 
 .about-text {
     display: flex;
     font-family: 'Playfair Display', serif; /* Serif for sophistication */
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
 }
 
 .about-text h1 {
-    font-size: 2.5rem;
-    font-weight: 550;
+    font-size: 3rem;
+    font-weight: 450
 }
 
 .about-text p {
-    font-size: 1.5rem;
-    font-weight: 600; /* Light weight for subtitle */
+    font-size: 1.7rem;
+    font-weight: 300; /* Light weight for subtitle */
     font-style: italic; /* Italicize the subtitle */
     line-height: 1.5; /* Spacing between lines */
     font-family: 'Open Sans', sans-serif; /* Font for the subtitle */
     margin-bottom: 10px;
 }
+
+.about-text .button-group {
+    display: flex;
+    gap: 10px;
+}
+
 
 .about-image {
     display: flex;
@@ -176,12 +183,13 @@ a {
 }
 
 .about-image img {
-    width: 420px; /* Keep the width to control size */
-    height: 550px; /* Set a height to maintain an oval shape */
+    width: 430px; /* Keep the width to control size */
+    height: 600px; /* Set a height to maintain an oval shape */
     object-fit: cover; /* Ensures the image fills the oval without distortion */
-    margin-left: 100px;
-    margin-right: 50px;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
 }
+
 
 /* Projects Section */
 .projects {
@@ -494,8 +502,6 @@ a {
 
 /* Contact */
 .contact {
-    /* background-color: #2b2b2b;
-    color: #fff; */
     padding: 100px 150px;
 }
 
@@ -558,7 +564,7 @@ a {
 
 .contact-image img {
     width: 430px; /* Keep the width to control size */
-    height: 750px; /* Set a height to maintain an oval shape */
+    height: 600px; /* Set a height to maintain an oval shape */
     object-fit: cover; /* Ensures the image fills the oval without distortion */
     /* margin-left: 50px; */
     /* margin-right: 50px; */
