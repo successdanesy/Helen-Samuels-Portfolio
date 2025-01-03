@@ -144,7 +144,7 @@ a {
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto;
     gap: 0; /* Reduced the gap between text and image */
     align-items: center;
@@ -500,9 +500,10 @@ a {
 }
 
 
-/* Contact */
+/* Contact Section */
 .contact {
-    padding: 100px 150px;
+    padding: 80px 20px;
+    background-color: #f8f9fa; /* Light gray for better contrast */
 }
 
 .contact-container {
@@ -510,56 +511,68 @@ a {
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 0; /* Reduced the gap between text and image */
+    gap: 30px;
     align-items: center;
 }
 
 .contact-text {
     display: flex;
-    font-family: 'Playfair Display', serif; /* Serif for sophistication */
     flex-direction: column;
     gap: 20px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
 }
 
 .contact-text h1 {
-    font-size: 3rem;
-    font-weight: 450
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
 }
 
 .contact-text p {
-    font-size: 2.0rem;
-    font-weight: 300; /* Light weight for subtitle */
-    font-style: italic; /* Italicize the subtitle */
-    line-height: 1.5; /* Spacing between lines */
-    font-family: 'Open Sans', sans-serif; /* Font for the subtitle */
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contact-text .button-group {
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-text .contact-button {
+    display: flex;
+    align-items: center;
     gap: 10px;
-}
-
-.contact-text button {
-    background-color: #fff;
-    color: #007BFF;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-text button:hover {
-    background-color: #0056b3;
+    background-color: #2b2b2b;
     color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
 }
 
+.contact-text .contact-button i {
+    font-size: 1.2rem;
+}
+
+.contact-text .contact-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Adds a subtle zoom effect */
+}
 
 .contact-image {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .contact-image img {
@@ -576,35 +589,42 @@ a {
     text-align: center;
     padding: 20px 10px;
     font-size: 14px;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .footer-content {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-content p {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
+    font-size: 16px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .social-icons a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%; /* Circular background on hover */
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #00acee; /* Highlight color for hover (Twitter Blue) */
+    background-color: #0056b3;
+    transform: scale(1.05); /* Adds a subtle zoom effect */
 }
 
 .footer-note {
     font-size: 12px;
-    color: #ccc; /* Subtle gray text */
+    color: #aaa; /* Subtle gray text */
     margin-top: 10px;
+    line-height: 1.5;
 }

@@ -17,22 +17,52 @@
                 <a href="#">Helen Samuel</a>
             </div>
             <ul class="menu">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+      <div class="menu-button" onclick="showSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg>
+    </div>
+</div>
+
+<!-- Sidebar (Mobile) -->
+<ul class="sidebar" id="sidebar">
+    <!-- Close Button -->
+    <li class="close-button" onclick="hideSidebar()">
+        <a href="javascript:void(0)">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+            </svg>
+        </a>
+    </li>
+    <!-- Sidebar Links -->
+    <li><a href="#home" onclick="hideSidebar()">Home</a></li>
+    <li><a href="#about" onclick="hideSidebar()">About</a></li>
+    <li><a href="#experience" onclick="hideSidebar()">Projects</a></li>
+    <li><a href="#education" onclick="hideSidebar()">Education</a></li>
+    <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+</ul>
+</nav>
     </nav>
 
+
     <!-- Header Section -->
-    <header class="header">
+    <section class="header" id="home">
         <div class="header-container">
             <div class="header-text">
                 <h1>Helen Samuel</h1>
                 <p>Virtual <br> Assistant</p>
                 <div class="button-group">
-                    <button>View Projects</button>
-                    <button>Get in Touch</button>
+                    <button onclick="scrollToSection('experience')">View My Work</button>
+                    <button onclick="scrollToSection('contact')">Book a Call</button>
                 </div>
             </div>
             
@@ -40,10 +70,10 @@
                 <img src="img/page1.JPG" alt="Your Photo">
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container">
             <div class="about-image">
                 <img src="img/page2.JPG" alt="Your Photo">
@@ -60,7 +90,7 @@
     </section>
 
         <!-- Professional Projects Section -->
-<section class="projects" id="projects">
+<section class="projects" id="experience">
     <div class="projects-container">
         <h1>Professional Experience</h1>
         <div class="timeline">
@@ -244,25 +274,36 @@
     </div>
 </section>
 
- <!-- Contact Section -->
- <section class="contact">
+<!-- Contact Section -->
+<section class="contact" id="contact">
     <div class="contact-container">
         <div class="contact-image">
             <img src="img/page5.jpeg" alt="Your Photo">
         </div>
         <div class="contact-text">
             <h1>Let's Work Together</h1>
-            <p>Contact Me Through Any of these Channels</p>
+            <p>Contact Me Through Any of These Channels</p>
             <div class="button-group">
-                <button><a href="tel:+2347087197338">Call Now</a></button>
-                <button><a href="mailto:helen.ima.samuel@gmail.com?subject=Inquiry%20about%20your%20services">Email Me</a></button>
-                <button><a href="https://wa.me/2347087197338?text=Hello%2C%20I%27m%20interested%20in%20your%20services">Whatsapp</a></button>
-                <button><a href="https://www.instagram.com/sisi_vero/profilecard/?igsh=MTk1b21nbWhnMzJxbQ==">Instagram</a></button>
-                <button><a href="https://www.linkedin.com/in/helen-samuel-va?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></button>
+                <a href="tel:+2347087197338" class="contact-button" title="Call Now">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+                <a href="mailto:helen.ima.samuel@gmail.com?subject=Inquiry%20about%20your%20services" class="contact-button" title="Email">
+                    <i class="fa fa-envelope"></i> Email Me
+                </a>
+                <a href="https://wa.me/2347087197338?text=Hello%2C%20I%27m%20interested%20in%20your%20services" class="contact-button" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/sisi_vero/profilecard/?igsh=MTk1b21nbWhnMzJxbQ==" class="contact-button" title="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/helen-samuel-va?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="contact-button" title="LinkedIn" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
     </div>
 </section>
+
 
 <footer class="footer">
     <div class="footer-content">

@@ -59,3 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
       circle.style.strokeDashoffset = offset;
   });
 });
+
+
+//scroll to section
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+//sidebar
+function showSidebar() {
+  document.getElementById('sidebar').classList.add('show');
+}
+
+function hideSidebar() {
+  document.getElementById('sidebar').classList.remove('show');
+}
