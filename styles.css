@@ -628,3 +628,156 @@ a {
     margin-top: 10px;
     line-height: 1.5;
 }
+
+/* Small phones (max-width: 375px) */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-image img {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .about-container,
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projects h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Phones (376px - 768px) */
+@media (min-width: 376px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 20px;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .header-image img {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .about-container,
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+        padding: 30px;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header {
+        padding: 70px 40px;
+        text-align: left;
+    }
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .header-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about-container,
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .projects h1 {
+        font-size: 2.5rem;
+    }
+}
