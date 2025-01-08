@@ -81,7 +81,7 @@ a {
 .header {
     background-color: #2b2b2b;
     color: #fff;
-    padding: 100px 20px; /* Reduce padding for smaller screens */
+    padding: 60px 20px; /* Reduce padding for smaller screens */
     text-align: center; /* Default to center text for smaller screens */
 }
 
@@ -120,6 +120,7 @@ a {
 .header-text .button-group {
     display: flex;
     gap: 15px;
+    
 }
 
 .header-text button {
@@ -961,6 +962,33 @@ a {
 
 /* For 1024px (tablets or larger mobile screens in portrait mode) */
 @media (max-width: 1024px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .menu {
+        top: 50px; /* Adjust top position */
+        right: 20px; /* Adjust right position */
+        width: 180px; /* Adjust width */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle .bar {
+        width: 20px; /* Adjust bar width */
+    }
+
+    .logo a {
+        font-size: 1.5rem; /* Slightly smaller font size */
+    }
+
+    .menu li a {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
     /* Header */
     .header-text h1 {
         font-size: 2rem; /* Slightly smaller heading font size */
@@ -972,6 +1000,10 @@ a {
 
     .header-image img {
         width: 220px; /* Slightly smaller image size */
+    }
+
+    .header-text .button-group .header-button {
+        font-size: 2rem; /* Slightly smaller font size for buttons */
     }
 
 
