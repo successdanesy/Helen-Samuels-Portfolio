@@ -1082,6 +1082,26 @@ a {
         font-size: 1rem; /* Slightly smaller font size */
     }
 
+    /* Personal Skills Section */
+    .personal-skills h1 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+
+    .skills-container p {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    .skill-chart {
+        flex: 1 1 180px; /* Adjust flex size for smaller screens */
+    }
+
+    .percentage {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart p {
+        font-size: 0.9rem; /* Adjust text size for smaller screens */
+    }   
 
 
     /* Contact */
