@@ -9,8 +9,6 @@ body {
     background-color: #fafafa;
     color: #333;
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
 }
 
@@ -19,37 +17,24 @@ a {
     color: inherit;
 }
 
-/* Container */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-  }
-
 /* Navbar */
 .navbar {
     padding: 15px 30px;
-  background-color: white;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 100;
-    /* background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 1000; */
+    z-index: 1000;
 }
 
 .navbar-container {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo a {
@@ -58,9 +43,9 @@ a {
     color: #333;
 }
 
+/* Menu */
 .menu {
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
     list-style: none;
 }
@@ -76,20 +61,37 @@ a {
     color: #007BFF;
 }
 
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
 /* Header */
 .header {
     background-color: #2b2b2b;
     color: #fff;
-    padding: 150px 150px;
+    padding: 100px 20px; /* Reduce padding for smaller screens */
+    text-align: center; /* Default to center text for smaller screens */
 }
 
 .header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 900px;
-    margin: 0 auto;
-    gap: 0; /* Reduced the gap between text and image */
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Adjusted gap for spacing */
 }
 
 .header-text {
@@ -97,11 +99,13 @@ a {
     font-family: 'Playfair Display', serif; /* Serif for sophistication */
     flex-direction: column;
     gap: 20px;
+    align-items: flex-start; /* Aligns text left by default */
+    text-align: left;
 }
 
 .header-text h1 {
-    font-size: 4rem;
-    font-weight: 450
+    font-size: 3.5rem;
+    font-weight: 600;
 }
 
 .header-text p {
@@ -115,14 +119,14 @@ a {
 
 .header-text .button-group {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .header-text button {
     background-color: #fff;
     color: #007BFF;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
@@ -136,14 +140,14 @@ a {
 
 .header-image {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .header-image img {
-    width: 350px; /* Keep the width to control size */
-    height: 400px; /* Set a height to maintain an oval shape */
+    width: 100%; /* Make responsive */
+    max-width: 350px; /* Limit size on larger screens */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes the image oval */
-    /* border: 5px solid #fff; White border around the image */
     box-shadow: 0 0 0 9px #201300, 0 0 0 15px #fff; /* Second blue border with white in between */
     object-fit: cover; /* Ensures the image fills the oval without distortion */
 }
@@ -152,15 +156,16 @@ a {
 
 /* About */
 .about {
-    padding: 100px 150px;
+    padding: 100px 20px; /* Use relative padding for smaller screens */
+    background-color: #f9f9f9; /* Subtle background contrast */
 }
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Default two-column layout */
     max-width: 1100px;
     margin: 0 auto;
-    gap: 0; /* Reduced the gap between text and image */
+    gap: 50px; /* Added gap for better spacing */
     align-items: center;
 }
 
@@ -173,36 +178,32 @@ a {
 
 .about-text h1 {
     font-size: 3rem;
-    font-weight: 450
-}
-
-.about-text p {
-    font-size: 1.7rem;
-    font-weight: 300; /* Light weight for subtitle */
-    font-style: italic; /* Italicize the subtitle */
-    line-height: 1.5; /* Spacing between lines */
-    font-family: 'Open Sans', sans-serif; /* Font for the subtitle */
+    font-weight: 450; /* Light weight for subtitle */
     margin-bottom: 10px;
 }
 
-.about-text .button-group {
-    display: flex;
-    gap: 10px;
+.about-text p {
+    font-size: 1.5rem;
+    font-weight: 300; /* Light weight for subtitle */
+    font-style: italic; /* Italicize the subtitle */
+    line-height: 1.8; /* Spacing between lines */
+    font-family: 'Open Sans', sans-serif; /* Font for the subtitle */
+    /* margin-bottom: 10px; */
+    color: #555; /* Subtle contrast for readability */
 }
-
 
 .about-image {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .about-image img {
-    width: 450px; /* Keep the width to control size */
-    height: 630px; /* Set a height to maintain an oval shape */
-    object-fit: cover; /* Ensures the image fills the oval without distortion */
-    box-shadow: 0 0 0 4px #2b2b2b; /* img border */
-    /* margin-left: 50px; */
-    /* margin-right: 50px; */
+    width: 100%; /* Responsive scaling */
+    max-width: 450px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px; /* Subtle rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced image shadow */
 }
 
 
@@ -210,7 +211,7 @@ a {
 .projects {
     background-color: #2b2b2b;
     color: #fff;
-    padding: 100px 50px;
+    padding: 100px 20px;
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
@@ -225,7 +226,7 @@ a {
 
 .timeline {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
     gap: 20px;
     margin: 0 auto;
     max-width: 1200px;
@@ -255,14 +256,14 @@ a {
 
 .timeline-item p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Educational Background Section */
 .education {
-    /* background-color: #2b2b2b;
-    color: #fff; */
-    padding: 100px 100px;
+    padding: 100px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
 }
 
 .education-container {
@@ -271,7 +272,7 @@ a {
 }
 
 .education-heading h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     text-align: center;
@@ -286,13 +287,21 @@ a {
 
 .education-item {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .education-item i {
     font-size: 2rem;
     color: #007BFF;
+}
+
+.education-text {
+    text-align: left;
 }
 
 .education-text h2 {
@@ -308,10 +317,11 @@ a {
 }
 
 .certificate-image {
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 /* Modal Styles */
@@ -382,7 +392,7 @@ a {
     text-align: center;
     background-color: #2b2b2b;
     color: #fff;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .skills-container h1 {
@@ -394,25 +404,29 @@ a {
 }
 
 .skills-container p {
-    font-size: 1.5rem;
-    font-weight: 600; /* Light weight for subtitle */
+    font-size: 1.3rem;
+    font-weight: 400; /* Light weight for subtitle */
     font-style: italic; /* Italicize the subtitle */
     font-family: 'Open Sans', sans-serif; /* Font for the subtitle */
     max-width: 1200px;
     margin: 0 auto 40px;
     color: #ddd; /* Slightly lighter text for readability */
     line-height: 1.7;
+    padding: 0 15px;
 }
 
 .skills-charts {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .skill-chart {
     text-align: center;
     position: relative;
+    flex: 1 1 200px; /* Allow flex items to shrink and grow */
+    max-width: 150px; /* Restrict max width for smaller screens */
 }
 
 .skill-chart svg {
@@ -429,7 +443,7 @@ a {
     stroke: #fff; /* Active progress color */
 }
 
-
+/* Percentage Display */
 .percentage {
     position: absolute;
     top: 30%;
@@ -440,6 +454,7 @@ a {
     color: #fff; /* Percentage color */
 }
 
+/* Skill Chart Labels */
 .skill-chart p {
     margin-top: 10px;
     font-size: 1rem;
@@ -452,7 +467,7 @@ a {
 .testimonials-section {
     background-color: #fafafa; /* Light background */
     color: #333; /* Dark text color */
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -460,7 +475,7 @@ a {
     font-size: 2.5rem;
     font-family: 'Playfair Display', serif;
     font-weight: 550;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #333; /* Heading color */
 }
 
@@ -468,10 +483,11 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin: 30px auto;
-    max-width: 800px;
+    margin: 40px auto;
+    max-width: 900px;
     border-bottom: 1px solid #ddd; /* Subtle divider */
     padding-bottom: 20px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
 
 .testimonial:last-child {
@@ -480,15 +496,23 @@ a {
 
 .testimonial img {
     width: 190px;
-    height: 200px;
+    height: auto;
     object-fit: cover; /* Ensures the image fills the oval without distortion */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 3px solid #201300; /* Light border for image */
+}
+
+.testimonial-image {
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #201300;
 }
 
 .testimonial-content {
     text-align: left;
     flex: 1;
+    max-width: 600px; /* Limit max-width for better alignment */
 }
 
 .testimonial-content h3 {
@@ -499,7 +523,7 @@ a {
 }
 
 .testimonial-content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #555; /* Slightly lighter text for readability */
     line-height: 1.7;
 }
@@ -511,7 +535,7 @@ a {
 
 .stars i {
     color: #f5a623; /* Star color (gold) */
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -591,8 +615,8 @@ a {
 }
 
 .contact-image img {
-    width: 430px; /* Keep the width to control size */
-    height: 600px; /* Set a height to maintain an oval shape */
+    width: 400px; /* Keep the width to control size */
+    height: auto; /* Set a height to maintain an oval shape */
     object-fit: cover; /* Ensures the image fills the oval without distortion */
     box-shadow: 0 0 0 4px #2b2b2b; /* img border */
     /* margin-left: 50px; */
@@ -645,155 +669,231 @@ a {
     line-height: 1.5;
 }
 
-/* Small phones (max-width: 375px) */
-@media (max-width: 375px) {
-    body {
-        font-size: 14px;
-        line-height: 1.5;
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /*navbar*/
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background: white;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         padding: 10px;
+        width: 200px;
+        border-radius: 5px;
     }
 
-    .navbar-container {
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    /*header*/
+    .header-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .header-text {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .header {
-        padding: 30px 15px;
+        align-items: center; /* Center align text and image */
         text-align: center;
     }
 
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .header-text h1 {
+        margin-bottom: 10px; /* Add spacing below "Helen Samuel" */
     }
 
-    .header-image img {
-        width: 80%;
-        max-width: 250px;
-        height: auto;
+    .header-image {
+        justify-content: center; /* Ensure image stays centered */
+        margin-bottom: 10px; /* Add spacing below the image */
     }
 
-    .about-container,
-    .contact-container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    .header-text p {
+        margin-bottom: 10px; /* Add spacing above "Virtual Assistant" */
     }
 
+    .button-group {
+        margin-top: 10px; /* Add spacing after buttons */
+        margin-bottom: 10px; /* Add spacing below buttons */
+    }
+
+    /*about*/
+    .about-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .about-text {
+        text-align: center; /* Center align text */
+    }
+
+    .about-image {
+        justify-content: center; /* Ensure image stays centered */
+    }
+
+    .about-text h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .about-text p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    /*projects*/
     .timeline {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        grid-template-columns: 1fr; /* Stack elements vertically */
     }
 
-    .projects h1 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Phones (376px - 768px) */
-@media (min-width: 376px) and (max-width: 768px) {
-    body {
-        font-size: 16px;
-        line-height: 1.6;
-        padding: 20px;
+    .timeline-item {
+        text-align: center; /* Center align text */
     }
 
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 15px;
+    .timeline-item h2 {
+        font-size: 1.8rem; /* Smaller font size for headings */
     }
 
-    .header {
-        padding: 50px 20px;
-        text-align: center;
+    .timeline-item h3 {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
     }
 
-    .header-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-        align-items: center;
+    .timeline-item p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
     }
 
-    .header-image img {
-        width: 70%;
-        max-width: 300px;
-        height: auto;
+    /*education*/
+    .education-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
     }
 
-    .about-container,
+    .education-heading h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .education-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align text */
+    }
+
+    .education-item i {
+        margin-bottom: 10px; /* Add spacing below icons */
+    }
+
+    .education-text h2 {
+        font-size: 1.5rem; /* Adjust text size for smaller screens */
+    }
+
+    .education-text p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .certificate-image {
+        width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    /*personal skills*/
+    .skills-container h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .skills-container p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart {
+        flex: 1 1 150px; /* Adjust flex size for smaller screens */
+    }
+
+    .percentage {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    /*testimonials*/
+    .testimonial {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .testimonial img {
+        width: 150px; /* Adjust image size for smaller screens */
+    }
+
+    .testimonial-content {
+        text-align: center; /* Center align text */
+    }
+
+    .testimonial-content h3 {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }   
+
+    .testimonial-content p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .stars{
+        justify-content: center; /* Center align stars */
+        font-size: 0.9rem;
+    }
+
+    /*contact*/
     .contact-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center align text */
     }
 
-    .timeline {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .contact-text {
+        text-align: center; /* Center align text */
     }
 
-    .projects h1 {
-        font-size: 2rem;
-    }
-}
-
-/* Tablets (769px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        font-size: 18px;
-        line-height: 1.8;
-        padding: 30px;
+    .contact-image {
+        justify-content: center; /* Ensure image stays centered */
     }
 
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
+    .contact-image img {
+        width: 300px; /* Adjust image size for smaller screens */
     }
 
-    .header {
-        padding: 70px 40px;
-        text-align: left;
+    .contact-text h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }   
+
+    .contact-text p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
     }
 
-    .header-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: center;
+    .contact-text .button-group {
+        flex-direction: column; /* Stack buttons vertically */
     }
 
-    .header-image img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
+    .contact-text .contact-button {
+        width: 100%; /* Full width buttons */
     }
 
-    .about-container,
-    .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+    /*footer*/
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically */
     }
 
-    .timeline {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+    .social-icons {
+        justify-content: center; /* Center align social icons */
     }
 
-    .projects h1 {
-        font-size: 2.5rem;
+    .social-icons a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-note {
+        font-size: 10px; /* Smaller font size for note */
     }
 }

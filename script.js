@@ -1,29 +1,10 @@
-// function showSidebar(){
-//     const sidebar = document.querySelector('.sidebar');
-//     sidebar.style.right = '0'; // Slide in from right
-//     document.body.classList.add('sidebar-open'); // Add class to hide menu button
-//   }
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
 
-//   function hideSidebar(){
-//     const sidebar = document.querySelector('.sidebar');
-//     sidebar.style.right = '-250px'; // Slide out to the right
-//     document.body.classList.remove('sidebar-open'); // Remove class to show menu button again
-//   }
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
 
-function showSidebar() {
-    document.getElementById('sidebar').classList.add('show');
-  }
-  
-  function hideSidebar() {
-    document.getElementById('sidebar').classList.remove('show');
-  }
-  
-  // Add event listener to the close button
-  document.querySelector(".close").addEventListener('click', closeModal);
-  
-  function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-  }
 
 //code to open and close certificate image
   function openModal(modalId) {
