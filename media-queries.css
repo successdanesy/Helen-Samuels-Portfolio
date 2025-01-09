@@ -1,0 +1,564 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    /*navbar*/
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background: white;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    /*header*/
+    .header-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align text and image */
+        text-align: center;
+    }
+
+    .header-text h1 {
+        margin-bottom: 10px; /* Add spacing below "Helen Samuel" */
+        /* font-size: 2.5rem; Smaller font size for headings */
+    }
+
+    .header-image {
+        justify-content: center; /* Ensure image stays centered */
+        margin-bottom: 10px; /* Add spacing below the image */
+    }
+
+    .header-image img {
+        width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    .header-text p {
+        margin-bottom: 10px; /* Add spacing above "Virtual Assistant" */
+        /* font-size: 1.5rem; Adjust text size for smaller screens */
+    }
+
+    .button-group {
+        margin-top: 10px; /* Add spacing after buttons */
+        margin-bottom: 10px; /* Add spacing below buttons */
+    }
+
+    /*about*/
+    .about-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .about-text {
+        text-align: center; /* Center align text */
+    }
+
+    .about-image {
+        justify-content: center; /* Ensure image stays centered */
+    }
+
+    .about-text h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .about-text p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    /*projects*/
+    .timeline {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+    }
+
+    .timeline-item {
+        text-align: center; /* Center align text */
+    }
+
+    .timeline-item h2 {
+        font-size: 1.8rem; /* Smaller font size for headings */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .timeline-item p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    /*education*/
+    .education-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+    }
+
+    .education-heading h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .education-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align text */
+    }
+
+    .education-item i {
+        margin-bottom: 10px; /* Add spacing below icons */
+    }
+
+    .education-text h2 {
+        font-size: 1.5rem; /* Adjust text size for smaller screens */
+    }
+
+    .education-text p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .certificate-image {
+        width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    /*personal skills*/
+    .skills-container h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .skills-container p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart {
+        flex: 1 1 150px; /* Adjust flex size for smaller screens */
+    }
+
+    .percentage {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    /*testimonials*/
+    .testimonial {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .testimonial img {
+        width: 150px; /* Adjust image size for smaller screens */
+    }
+
+    .testimonial-content {
+        text-align: center; /* Center align text */
+    }
+
+    .testimonial-content h3 {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }   
+
+    .testimonial-content p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .stars{
+        justify-content: center; /* Center align stars */
+        font-size: 0.9rem;
+    }
+
+    /*contact*/
+    .contact-container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .contact-text {
+        text-align: center; /* Center align text */
+    }
+
+    .contact-image {
+        justify-content: center; /* Ensure image stays centered */
+    }
+
+    .contact-image img {
+        width: 300px; /* Adjust image size for smaller screens */
+    }
+
+    .contact-text h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }   
+
+    .contact-text p {
+        font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+
+    .contact-text .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .contact-text .contact-button {
+        width: 100%; /* Full width buttons */
+    }
+
+    /*footer*/
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center align social icons */
+    }
+
+    .social-icons a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-note {
+        font-size: 10px; /* Smaller font size for note */
+    }
+}
+
+/* Media Queries for 375px and 1024px */
+
+/* For 375px (small mobile devices) */
+@media (max-width: 375px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .menu {
+        top: 50px; /* Adjust top position */
+        right: 20px; /* Adjust right position */
+        width: 150px; /* Adjust width */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle .bar {
+        width: 15px; /* Adjust bar width */
+    }
+
+    .logo a {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .menu li a {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    /* Header */
+    .header-text h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .header-text p {
+        font-size: 2rem; /* Smaller font size for paragraph */
+    }
+
+    .header-image img {
+        width: 180px; /* Adjust image size */
+    }
+
+    .header-text .button-group .header-button {
+        font-size: 1.8rem; /* Smaller font size for buttons */
+    }
+
+    /* About */
+    .about h1 {
+        font-size: 2.5rem; /* Smaller font size */
+    }
+
+    .about-text h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .about-text p {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .about-image img {
+        width: 80%; /* Make image slightly smaller */
+        max-width: 300px; /* Limit the max size */
+    }
+
+    /* Projects Section */
+    .projects h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .timeline-item h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .timeline-item p {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    /* Educational Background Section */
+    .education-heading h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .education-item i {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .education-text h2 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .education-text p {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .certificate-image {
+        width: 220px; /* Smaller image size */
+    }
+
+    /* Personal Skills Section */
+    .personal-skills h1 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+
+    .skills-container p {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    .skill-chart {
+        flex: 1 1 180px; /* Adjust flex size for smaller screens */
+    }
+
+    .percentage {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart p {
+        font-size: 0.9rem; /* Adjust text size for smaller screens */
+    }   
+
+    /* Testimonials */
+
+    /* Contact */
+    .contact-text h1 {
+        font-size: 1.6rem; /* Smaller heading font size */
+    }
+
+    .contact-text p {
+        font-size: 0.9rem; /* Smaller paragraph font size */
+    }
+
+    .contact-image img {
+        width: 80%; /* Make image slightly smaller */
+        max-width: 250px; /* Limit the max size */
+    }
+
+    .contact-text .button-group .contact-button {
+        font-size: 0.9rem; /* Smaller font size for buttons */
+    }
+
+    /* Testimonials */
+    .testimonial img {
+        width: 100px; /* Reduce image size */
+        height: 100px; /* Maintain square shape */
+    }
+
+    .testimonial-content h3 {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .testimonial-content p {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    /* Footer */
+    .footer-note {
+        font-size: 0.7rem; /* Smaller font size for footer note */
+    }
+}
+
+/* For 1024px (tablets or larger mobile screens in portrait mode) */
+@media (max-width: 1024px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .menu {
+        top: 50px; /* Adjust top position */
+        right: 20px; /* Adjust right position */
+        width: 180px; /* Adjust width */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle .bar {
+        width: 20px; /* Adjust bar width */
+    }
+
+    .logo a {
+        font-size: 1.5rem; /* Slightly smaller font size */
+    }
+
+    .menu li a {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    /* Header */
+    .header-text h1 {
+        font-size: 2rem; /* Slightly smaller heading font size */
+    }
+
+    .header-text p {
+        font-size: 2rem; /* Slightly smaller font size */
+    }
+
+    .header-image img {
+        display: none; /* Hide image for smaller screens */
+    }
+
+    .header-text .button-group .header-button {
+        font-size: 2rem; /* Slightly smaller font size for buttons */
+    }
+
+    /* About */
+    .about h1 {
+        font-size: 2.5rem; /* Slightly smaller heading font size */
+    }
+
+    .about-text h1 {
+        font-size: 2rem; /* Slightly smaller heading font size */
+    }
+
+    .about-text p {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .about-image img {
+        width: 90%; /* Slightly smaller image size */
+        max-width: 500px; /* Limit the max size */
+    }
+
+
+    /* Projects Section */
+
+    .projects h1 {
+        font-size: 2rem; /* Slightly smaller font size */
+    }
+
+    .timeline-item h2 {
+        font-size: 1.5rem; /* Slightly smaller font size */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .timeline-item p {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    /* Educational Background Section */
+    .education-heading h1 {
+        font-size: 2rem; /* Slightly smaller font size */
+    }
+
+    .education-item i {
+        font-size: 1.5rem; /* Slightly smaller font size */
+    }
+
+    .education-text h2 {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .education-text p {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    .certificate-image {
+        width: 200px; /* Slightly smaller image size */
+    }
+
+    /* testimonials section */
+    .testimonials-section h1 {
+        font-size: 2rem; /* Slightly smaller font size */
+    }
+    
+    .testimonial img {
+        width: 190px; /* Slightly smaller image size */
+        height: auto; /* Maintain square shape */
+    }
+
+    .testimonial-content h3 {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .testimonial-content p {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    /* Personal Skills Section */
+    .personal-skills h1 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+
+    .skills-container p {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    .skill-chart {
+        flex: 1 1 180px; /* Adjust flex size for smaller screens */
+    }
+
+    .percentage {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .skill-chart p {
+        font-size: 0.9rem; /* Adjust text size for smaller screens */
+    }   
+
+
+    /* Contact */
+    .contact-text h1 {
+        font-size: 1.8rem; /* Slightly smaller heading font size */
+    }
+
+    .contact-text p {
+        font-size: 1rem; /* Slightly smaller paragraph font size */
+    }
+
+    .contact-image img {
+        display: none;
+    }
+
+    .contact-text .button-group .contact-button {
+        font-size: 1rem; /* Slightly smaller font size for buttons */
+    }
+
+    /* Footer */
+    .footer-note {
+        font-size: 0.8rem; /* Slightly smaller font size for footer note */
+    }
+}
