@@ -1,4 +1,5 @@
 /* Responsive Design */
+
 /* For 375px (mobile phones) */
 @media (max-width: 375px-480px) {
     /* Navbar */
@@ -90,6 +91,7 @@ portrait mode*/
     .menu-toggle {
         display: flex;
     }
+
     /*header*/
     .header-container {
         grid-template-columns: 1fr; /* Stack elements vertically */
@@ -142,7 +144,7 @@ portrait mode*/
     }
 
     .about-text h1 {
-        font-size: 2rem; /* Smaller font size for headings */
+        font-size: 1.5rem; /* Smaller font size for headings */
     }
 
     .about-text p {
@@ -352,15 +354,16 @@ portrait mode*/
 
     /* About */
     .about h1 {
-        font-size: 2.5rem; /* Slightly smaller heading font size */
+        font-size: 1.5rem; /* Slightly smaller heading font size */
     }
 
     .about-text h1 {
-        font-size: 2rem; /* Slightly smaller heading font size */
+        font-size: 1.5rem; /* Slightly smaller heading font size */
     }
 
     .about-text p {
-        font-size: 1.2rem; /* Slightly smaller font size */
+        font-size: 1rem; /* Slightly smaller font size */
+        text-align: left;
     }
 
     .about-image img {
@@ -372,11 +375,11 @@ portrait mode*/
     /* Projects Section */
 
     .projects h1 {
-        font-size: 2rem; /* Slightly smaller font size */
+        font-size: 1.5rem; /* Slightly smaller font size */
     }
 
     .timeline-item h2 {
-        font-size: 1.5rem; /* Slightly smaller font size */
+        font-size: 1.2rem; /* Slightly smaller font size */
     }
 
     .timeline-item h3 {
@@ -385,11 +388,22 @@ portrait mode*/
 
     .timeline-item p {
         font-size: 1rem; /* Slightly smaller font size */
+        text-align: left;
     }
 
     /* Educational Background Section */
     .education-heading h1 {
-        font-size: 2rem; /* Slightly smaller font size */
+        font-size: 1.5rem; /* Slightly smaller font size */
+    }
+
+    .education-heading h3 {
+        font-size: 0.9rem; /* Slightly smaller font size */
+        text-align: center;
+    }
+
+    .education-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align text */
     }
 
     .education-item i {
@@ -402,6 +416,7 @@ portrait mode*/
 
     .education-text p {
         font-size: 1rem; /* Slightly smaller font size */
+        text-align: left;
     }
 
     .certificate-image {
@@ -410,7 +425,7 @@ portrait mode*/
 
     /* testimonials section */
     .testimonials-section h1 {
-        font-size: 2rem; /* Slightly smaller font size */
+        font-size: 1.5rem; /* Slightly smaller font size */
     }
     
     .testimonial img {
@@ -424,15 +439,17 @@ portrait mode*/
 
     .testimonial-content p {
         font-size: 1rem; /* Slightly smaller font size */
+        /* text-align: left; */
     }
 
     /* Personal Skills Section */
     .personal-skills h1 {
-        font-size: 1.8rem; /* Slightly smaller font size */
+        font-size: 1.5rem; /* Slightly smaller font size */
     }
 
     .skills-container p {
         font-size: 1rem; /* Slightly smaller font size */
+        text-align: left;
     }
 
     .skill-chart {
@@ -440,7 +457,7 @@ portrait mode*/
     }
 
     .percentage {
-        font-size: 1rem; /* Adjust text size for smaller screens */
+        font-size: 0.9rem; /* Adjust text size for smaller screens */
     }
 
     .skill-chart p {
@@ -469,4 +486,70 @@ portrait mode*/
     .footer-note {
         font-size: 0.8rem; /* Slightly smaller font size for footer note */
     }
+}
+
+
+
+
+/* For iPad Air and iPad Pro Portrait Screens */
+@media (min-width: 820px) and (max-width: 1024px) {
+    /* Adjust navbar spacing and alignment */
+    .navbar {
+        padding: 15px 25px; /* Adjust padding */
+    }
+
+    .menu {
+        top: 65px; /* Adjust position */
+        right: 30px; /* Keep consistent spacing */
+    }
+
+    .menu-toggle {
+        display: none; /* Only show menu toggle on smaller screens */
+    }
+
+    .menu li a {
+        font-size: 1rem; /* Maintain readability */
+    }
+
+    /* Header adjustments */
+    .header-container {
+        grid-template-columns: 1fr 1fr; /* Avoid stacking elements */
+        align-items: center; /* Align properly */
+        text-align: left; /* Ensure alignment isn't distorted */
+    }
+
+    .header-image img {
+        width: 250px; /* Appropriate scaling */
+        display: block; /* Ensure visibility */
+    }
+
+    /* General adjustments */
+    .about-container,
+    .education-container,
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr); /* Keep a two-column layout */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .timeline {
+        grid-template-columns: repeat(2, 1fr); /* Prevent vertical stacking */
+    }
+
+    .testimonial img {
+        width: 200px; /* Scale images */
+    }
+
+    .certificate-image {
+        width: 250px; /* Scale images */
+    }
+
+    .skill-chart {
+        flex: 1 1 200px; /* Adjust flex size */
+    }
+
+    .contact-image img {
+        display: block; /* Ensure visibility */
+        width: 300px; /* Scale images */
+    }
+
 }

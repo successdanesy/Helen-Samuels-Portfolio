@@ -71,7 +71,7 @@ function updateImage() {
   }
     else if (window.innerWidth <= 1024) {
     img.src = 'img/page2.JPG'; // Image for larger devices
-}
+  }
     else {
     img.src = 'img/page1.JPG'; // Image for large screens (e.g., desktops)
 }
