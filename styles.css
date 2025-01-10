@@ -347,12 +347,18 @@ a {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .education-text p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: left;
+}
+
+.education-text h3 {
+    text-align: left;
 }
 
 .certificate-image {
@@ -443,6 +449,7 @@ a {
 }
 
 .skills-container p {
+    /* text-align: justify; */
     font-size: 1.3rem;
     font-weight: 400; /* Light weight for subtitle */
     font-style: italic; /* Italicize the subtitle */
@@ -488,7 +495,7 @@ a {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #fff; /* Percentage color */
 }

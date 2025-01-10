@@ -412,11 +412,17 @@ portrait mode*/
 
     .education-text h2 {
         font-size: 1.2rem; /* Slightly smaller font size */
+        text-align: center;
     }
 
     .education-text p {
         font-size: 1rem; /* Slightly smaller font size */
-        text-align: left;
+        text-align: center;
+    }
+
+    .education-text h3 {
+        text-align: center;
+        font-size: 0.9rem; /* Slightly smaller font size */
     }
 
     .certificate-image {
@@ -449,7 +455,7 @@ portrait mode*/
 
     .skills-container p {
         font-size: 1rem; /* Slightly smaller font size */
-        text-align: left;
+        /* text-align: left; */
     }
 
     .skill-chart {
