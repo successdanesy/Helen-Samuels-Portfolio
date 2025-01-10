@@ -2,8 +2,11 @@ const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', () => {
+    const isOpen = menuToggle.getAttribute('data-state') === 'open';
+    menuToggle.setAttribute('data-state', isOpen ? 'closed' : 'open');
     menu.classList.toggle('show');
 });
+
 
 
 //code to open and close certificate image
@@ -55,3 +58,27 @@ function showSidebar() {
 function hideSidebar() {
   document.getElementById('sidebar').classList.remove('show');
 }
+
+// Function to update the image source
+function updateImage() {
+  const img = document.getElementById('responsive-image');
+
+  // Check the screen width
+  if (window.innerWidth <= 375) {
+    img.src = 'img/page2.JPG'; // Image for smaller devices
+  } else if (window.innerWidth <= 768) {
+    img.src = 'img/page2.JPG'; // Image for larger devices
+  }
+    else if (window.innerWidth <= 1024) {
+    img.src = 'img/page2.JPG'; // Image for larger devices
+}
+    else {
+    img.src = 'img/page1.JPG'; // Image for large screens (e.g., desktops)
+}
+}
+
+// Run the function on page load
+updateImage();
+
+// Add an event listener to handle window resize
+window.addEventListener('resize', updateImage);
