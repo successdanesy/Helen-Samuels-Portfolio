@@ -669,6 +669,22 @@ a {
     /* margin-right: 50px; */
 }
 
+
+/* Footer */
+.animated-logo .orbits {
+    animation: rotateLogo 10s linear infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes rotateLogo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 .footer {
     background-color: #2b2b2b; /* Dark background */
     color: #fff; /* White text */
